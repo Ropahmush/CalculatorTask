@@ -1,6 +1,7 @@
 <?php
-function execute():void {
-    echo "Hello functions";
+function execute(string $text):void
+ {
+    echo ($text);
 }
-execute();
+  execute("param3t3r");
 ?>
