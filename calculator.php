@@ -38,18 +38,17 @@ print(mult(10,2))."<br/>";
 print(div(10,2))."<br/>";
 
 function calculator2(string $userinput): float{
-   
   echo($userinput);
   preg_match_all('!\d+!',$userinput,$matches);
-  
   print_r($matches);
-  
-preg_match_all('!\D+!', $userinput,$operators);
-  
-print_r($operators);
-
-return(0);
+ foreach($matches as $key => $value){
+    print_r($key) ; 
+preg_match_all('!\D+!', $userinput, $operators);
+print_r($operators); }
+//foreach($matches as $key => $value){
+  //  print_r($key) ; 
 }
+$answer = array_merge();
+print_r($answer);
 
 echo calculator2('3+2*3');
-
